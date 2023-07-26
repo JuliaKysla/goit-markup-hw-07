@@ -4,70 +4,42 @@
     {
       "icon": {
         "paths": [
-          "M1024 512c0 282.77-229.23 512-512 512s-512-229.23-512-512c0-282.77 229.23-512 512-512s512 229.23 512 512z",
-          "M1002.667 512c0 270.988-219.679 490.667-490.667 490.667s-490.667-219.679-490.667-490.667c0-270.988 219.679-490.667 490.667-490.667s490.667 219.679 490.667 490.667z",
-          "M682.667 375.71l-34.377-34.377-136.29 136.29-136.29-136.29-34.377 34.377 136.29 136.29-136.29 136.29 34.377 34.377 136.29-136.29 136.29 136.29 34.377-34.377-136.29-136.29 136.29-136.29z"
+          "M62.743 932.911h1374.86M62.743 499.665h1374.86M62.743 66.467h1374.86"
         ],
         "attrs": [
           {
-            "fill": "rgb(231, 233, 252)"
-          },
-          {
             "fill": "none",
-            "stroke": "rgb(0, 0, 0)",
-            "strokeLinejoin": "miter",
-            "strokeLinecap": "butt",
+            "strokeLinejoin": "round",
+            "strokeLinecap": "round",
             "strokeMiterlimit": "4",
-            "strokeWidth": 42.666666666666664
-          },
-          {
-            "fill": "rgb(46, 47, 66)"
+            "strokeWidth": 139.63636363636363
           }
         ],
-        "isMulticolor": true,
-        "isMulticolor2": true,
+        "width": 1489,
+        "isMulticolor": false,
+        "isMulticolor2": false,
         "grid": 0,
         "tags": [
-          "close"
-        ],
-        "colorPermutations": {
-          "123123325214647661": [
-            {
-              "f": 2
-            },
-            {
-              "s": 0
-            },
-            {
-              "f": 1
-            }
-          ]
-        }
+          "charm_menu-hamburger"
+        ]
       },
       "attrs": [
         {
-          "fill": "rgb(231, 233, 252)"
-        },
-        {
           "fill": "none",
-          "stroke": "rgb(0, 0, 0)",
-          "strokeLinejoin": "miter",
-          "strokeLinecap": "butt",
+          "strokeLinejoin": "round",
+          "strokeLinecap": "round",
           "strokeMiterlimit": "4",
-          "strokeWidth": 42.666666666666664
-        },
-        {
-          "fill": "rgb(46, 47, 66)"
+          "strokeWidth": 139.63636363636363
         }
       ],
       "properties": {
-        "order": 19,
+        "order": 14,
         "id": 0,
-        "name": "modal-close",
+        "name": "charm_menu-hamburger",
         "prevSize": 32
       },
       "setIdx": 0,
-      "setId": 4,
+      "setId": 6,
       "iconIdx": 0
     }
   ],
@@ -75,7 +47,7 @@
   "preferences": {
     "showGlyphs": true,
     "showQuickUse": true,
-    "showQuickUse2": false,
+    "showQuickUse2": true,
     "showSVGs": true,
     "fontPref": {
       "prefix": "icon-",
@@ -91,22 +63,18 @@
     },
     "imagePref": {
       "prefix": "",
-      "png": false,
+      "png": true,
       "useClassSelector": true,
       "color": 0,
       "bgColor": 16777215,
       "classSelector": ".icon",
       "name": "icomoon",
-      "autoHost": true,
       "height": 32,
       "columns": 16,
       "margin": 16
     },
     "historySize": 50,
     "showCodes": true,
-    "gridSize": 16,
-    "quickUsageToken": {
-      "UntitledProject": "MjY1YTY1NjE1YjEwNTJkY2M2ZWI5N2I2ZGZhZmExMTEjMSMxNjg4NTYzMTI5IyMjZWU4YzJhNWY2NzI5"
-    }
+    "gridSize": 16
   }
 }

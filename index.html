@@ -15,7 +15,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/root-reset.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <!-- header -->
@@ -54,6 +57,15 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-btn-icon" width="32" height="22">
+            <use href="./images/icons.svg#charm_menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -130,7 +142,7 @@
             <li class="work-item">
               <img
                 class="work-pic"
-                src="./images/main/img1.jpg"
+                srcset="./images/main/_desc@1x-2.jpg, ./images/main/_desc@2x-2.jpg"
                 alt="image on display"
                 width="360"
                 height="300"
@@ -139,7 +151,7 @@
             <li class="work-item">
               <img
                 class="work-pic"
-                src="./images/main/img2.jpg"
+                srcset="./images/main/_desc@1x-1.jpg, ./images/main/_desc@2x-1.jpg"
                 alt="image on phone display"
                 width="360"
                 height="300"
@@ -148,7 +160,7 @@
             <li class="work-item">
               <img
                 class="work-pic"
-                src="./images/main/img3.jpg"
+                srcset="./images/main/_desc@1x.jpg, ./images/main/_desc@2x.jpg"
                 alt="image of notebook and phone"
                 width="360"
                 height="300"
@@ -166,7 +178,8 @@
             <li class="team-item">
               <img
                 class="team-pic"
-                src="./images/ourteam/photo.jpg"
+                srcset="./images/ourteam/img_desc@1x-3.jpg, 
+                ./images/ourteam/img_desc@2x-3.jpg"
                 alt="Photo of emploiy"
                 width="264"
                 height="260"
@@ -233,7 +246,8 @@
             <li class="team-item">
               <img
                 class="team-pic"
-                src="./images/ourteam/photo1.jpg"
+                srcset="./images/ourteam/img_desc@1x-2.jpg, 
+                ./images/ourteam/img_desc@2x-2.jpg"
                 alt="Photo of emploiy"
                 width="264"
                 height="260"
@@ -300,7 +314,8 @@
             <li class="team-item">
               <img
                 class="team-pic"
-                src="./images/ourteam/photo2.jpg"
+                srcset="./images/ourteam/img_desc@1x-1.jpg, 
+                ./images/ourteam/img_desc@2x-1.jpg"
                 alt="Photo of emploiy"
                 width="264"
                 height="260"
@@ -367,7 +382,8 @@
             <li class="team-item">
               <img
                 class="team-pic"
-                src="./images/ourteam/photo3.jpg"
+                srcset="./images/ourteam/img_desc@1x.jpg, 
+                ./images/ourteam/img_desc@2x.jpg"
                 alt="Photo of emploiy"
                 width="264"
                 height="260"
@@ -488,96 +504,99 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container footer-flex">
-        <div class="footer-left">
-          <a class="logo-footer link" href="./index.html"
-            >Web<span class="logo-color-white">Studio</span></a
-          >
-          <p class="footer-text">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
-        <div class="footer-right">
-          <p class="footer-media">Social media</p>
-          <ul class="media">
-            <li class="media-item">
-              <a
-                class="media-link"
-                href="https://www.instagram.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram icon"
-              >
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="media-item">
-              <a
-                class="media-link"
-                href="https://twitter.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Twitter icon"
-              >
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="media-item">
-              <a
-                class="media-link"
-                href="https://www.facebook.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Facebook icon"
-              >
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="media-item">
-              <a
-                class="media-link"
-                href="https://www.linkedin.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Linedin icon"
-              >
-                <svg class="social-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+        <div class="footer-tablet-flex">
+          <div class="footer-left">
+            <a class="logo-footer link" href="./index.html"
+              >Web<span class="logo-color-white">Studio</span></a
+            >
+            <p class="footer-text">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+            </p>
+          </div>
+          <div class="footer-right">
+            <p class="footer-media">Social media</p>
+            <ul class="media">
+              <li class="media-item">
+                <a
+                  class="media-link"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram icon"
+                >
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media-item">
+                <a
+                  class="media-link"
+                  href="https://twitter.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Twitter icon"
+                >
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media-item">
+                <a
+                  class="media-link"
+                  href="https://www.facebook.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook icon"
+                >
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="media-item">
+                <a
+                  class="media-link"
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Linedin icon"
+                >
+                  <svg class="social-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <!-- footer subscribe -->
         <div class="footer-subscribe">
           <p class="footer-sub-text">Subscribe</p>
           <form class="wrapper-subscribe">
-              <label class="footer-lable" for="subscribe-input">
-                <input
-                  class="footer-email-input"
-                  name="subscribe-input"
-                  id="subscribe-input"
-                  type="email"
-                  placeholder="E-mail"
-                />
-              </label>
-              <button type="submit" class="footer-btn-send">
-                Subscribe
-                <svg class="footer-send-icon" width="24" height="24">
-                  <use href="./images/icons.svg#send-sign"></use>
-                </svg>
-              </button>
+            <label class="footer-lable" for="subscribe-input">
+              <input
+                class="footer-email-input"
+                name="subscribe-input"
+                id="subscribe-input"
+                type="email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="footer-btn-send">
+              Subscribe
+              <svg class="footer-send-icon" width="24" height="24">
+                <use href="./images/icons.svg#send-sign"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
     <!-- modal window -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button
@@ -641,14 +660,15 @@
               id="user-privacy"
               value="true"
             />
-            <label class="modal-agreement-desc" for="user-privacy"><span class="modal-form-check-box">
-              <svg class="modal-form-custom-checkbox" width="10" height="8">
-                <use
-                  class="modal-form-icon-check"
-                  href="./images/icons.svg#click-box">
-              </use>
-              </svg>
-            </span> 
+            <label class="modal-agreement-desc" for="user-privacy">
+              <span class="modal-form-check-box">
+                <svg class="modal-form-custom-checkbox" width="10" height="8">
+                  <use
+                    class="modal-form-icon-check"
+                    href="./images/icons.svg#click-box"
+                  ></use>
+                </svg>
+              </span>
               I accept the terms and conditions of the
               <a class="modal-agreement-link" href="#">Privacy Policy</a>
             </label>
@@ -657,6 +677,105 @@
         </form>
       </div>
     </div>
+
+    <!-- Mobile menu -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="modal-icon" width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <nav>
+        <ul class="mobile-menu">
+          <li class="item">
+            <a href="./index.html" class="active link-text link">Studio</a>
+          </li>
+          <li class="item">
+            <a href="./portfolio.html" class="link-text link">Portfolio</a>
+          </li>
+          <li><a href="" class="link-text link">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="contact-mobile">
+        <ul class="contact-mobile-list list">
+          <li class="contact-mobile-item">
+            <a class="contact-mobile-tel link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="contact-mobile-item">
+            <a
+              class="contact-mobile-email link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="media-mob-menu">
+        <li class="media-mob-item">
+          <a
+            class="media-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram icon"
+          >
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="media-mob-item">
+          <a
+            class="media-link"
+            href="https://twitter.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter icon"
+          >
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="media-mob-item">
+          <a
+            class="media-link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook icon"
+          >
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="media-mob-item">
+          <a
+            class="media-link"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Linedin icon"
+          >
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/menu-mobile.js"></script>
   </body>
 </html>

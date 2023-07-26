@@ -1,0 +1,270 @@
+@media screen and (min-width:768px) {
+
+  .container {
+    max-width:768px;
+  }
+
+  .logo-header {
+    margin-right: 120px;
+  }
+
+  .navigator {
+    display: flex;
+    align-items: center;
+
+  }
+
+
+
+  .menu {
+    display: flex;
+    gap: 40px;
+  }
+
+  .menu-item {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .menu-link {
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--dark, #2E2F42);
+
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    position: relative;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  }
+
+  .menu-link:hover::after,
+  .menu-link:focus::after {
+    opacity: 1;
+  }
+
+  .menu-link::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: var(--pressed-state);
+    border-radius: 2px;
+    position: absolute;
+    bottom: -1px;
+    opacity: 0;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .menu-active::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background: var(--pressed-state);
+    border-radius: 2px;
+    position: absolute;
+    bottom: -1px;
+    opacity: 1;
+  }
+
+  .menu-active {
+    color: var(--pressed-state)
+  }
+
+  .menu-link:hover,
+  .menu-link:focus {
+    color: var(--pressed-state, #404BBF);
+  }
+
+
+  .contact {
+    display: block;
+    font-style: normal;
+    margin-left: auto;
+
+  }
+
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+
+
+  .contact-item:not(:last-child) {
+    margin-bottom: 12px;
+
+  }
+
+  .contact-link {
+    font-size: 12px;
+    line-height: 1.166666;
+    letter-spacing: 0.04em;
+    color: var(--text, #434455);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .contact-link:hover,
+  .contact-link:focus {
+    color: var(--pressed-state, #404BBF);
+  }
+
+  /* Hero */
+
+  .hero {
+    max-width: 768px;
+
+  }
+
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+
+
+  /* Advantages */
+
+  .advantages-title {}
+
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .advantages-item {
+    flex-basis: calc((100% - 24px) / 2);
+
+  }
+
+  .advantages-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+
+  /* TEAM */
+
+  .team-item:not(:last-child) {
+    margin-bottom: 0;
+
+  }
+
+  .team-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+
+  .team-item {
+    flex-basis: calc((100% - 24px) / 2);
+
+  }
+
+  /* Customers */
+
+  .customers {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+
+  .customers-list {
+    column-gap: 16px;
+    row-gap: 72px;
+    justify-content: center;
+  }
+
+  .customers-items {
+    flex-basis: calc((100% - 16px * 2) / 3);
+  }
+
+  .customers-link {
+
+    max-width: 168px;
+  }
+
+/* Footer */
+
+
+.footer-flex {
+  display: flex;
+  flex-wrap: wrap;
+
+
+}
+
+.footer-tablet-flex {
+  display:flex;
+  gap: 32px;
+}
+.footer-sub-text {
+
+  text-align:start;
+
+}
+
+.wrapper-subscribe {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.footer-email-input {
+  width: 264px;
+}
+/* Modal */
+
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+    width: 408px;
+    min-height: 584px;
+    border-radius: 4px;
+    background: var(--modal-background, #FCFCFC);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+  
+    padding-top: 72px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+}
+
+@media screen and (min-width: 769px){
+  .hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/hero/people-office/1_desc@1x.jpg');;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+.hero {
+  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/hero/people-office 1_desc@2x.jpg');
+}
+}
+
+  
+}

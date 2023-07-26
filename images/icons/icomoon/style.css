@@ -14,3 +14,7 @@ Single-colored icons can be modified like so:
   color: red;
 }
 ========================================== */
+
+.charm_menu-hamburger {
+  width: 1.4541015625em;
+}
