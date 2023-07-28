@@ -4,8 +4,6 @@
   padding: 0 16px;
   margin: 0 auto;
 
-  outline: 2px solid red;
-  outline-offset: -2px;
 }
 
 /* header */
@@ -19,8 +17,8 @@
 .header-div {
   display: flex;
   align-items: center;
-  /* padding-bottom: 24px;
-  padding-top: 24px; */
+  padding-bottom: 24px;
+  padding-top: 24px;
 
 }
 
@@ -507,7 +505,6 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  outline: 1px solid blue;
 
   display: inline-block;
   margin-bottom: 17.5px;
@@ -526,6 +523,8 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-left: auto;
+  margin-right: auto;
 
   max-width: 268px;
 
