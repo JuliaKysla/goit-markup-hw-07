@@ -135,6 +135,7 @@
   flex-direction: row;
 gap: 24px;
   justify-content: center;
+  width: 100%;
 }
 
 .customers-items {
@@ -172,5 +173,7 @@ gap: 24px;
 .footer-text {
   margin-bottom: 0;
 }
+
+
 
 }

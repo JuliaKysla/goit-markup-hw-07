@@ -119,11 +119,6 @@
 
   /* Hero */
 
-  .hero {
-    max-width: 768px;
-
-  }
-
 
   .hero-title {
     font-size: 56px;
@@ -190,6 +185,9 @@
     column-gap: 16px;
     row-gap: 72px;
     justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 528px;
   }
 
   .customers-items {
@@ -230,6 +228,15 @@
 .footer-email-input {
   width: 264px;
 }
+
+.logo-footer {
+  text-align: start;
+}
+
+.footer-media {
+  text-align: start;
+}
+
 /* Modal */
 
   .modal {
@@ -255,14 +262,14 @@
 
 @media screen and (min-width: 769px){
   .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/hero/people-office/1_desc@1x.jpg');;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/hero/_desc@1x.jpg');;
   }
 
   @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
 .hero {
-  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/hero/people-office 1_desc@2x.jpg');
+  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/hero/_desc@2x.jpg');
 }
 }
 
