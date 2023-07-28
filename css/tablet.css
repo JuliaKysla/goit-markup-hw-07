@@ -273,7 +273,7 @@
 
 @media screen and (min-width: 769px) {
   .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/hero/_desc@1x.jpg');
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/hero/desc@1x.jpg');
     ;
   }
 
@@ -281,7 +281,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     .hero {
-      background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/hero/_desc@2x.jpg');
+      background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/hero/desc@2x.jpg');
     }
   }
 
