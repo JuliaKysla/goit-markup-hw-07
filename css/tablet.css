@@ -1,7 +1,7 @@
 @media screen and (min-width:768px) {
 
   .container {
-    max-width:768px;
+    max-width: 768px;
   }
 
   .logo-header {
@@ -199,58 +199,64 @@
     max-width: 168px;
   }
 
-/* Footer */
+  /* Footer */
 
 
-.footer-flex {
-  display: flex;
-  flex-wrap: wrap;
+  .footer {
+    padding-left: 108px;
+    padding-right: 108px;
 
 
-}
+  }
 
-.footer-tablet-flex {
-  display:flex;
-  gap: 32px;
-}
-.footer-sub-text {
+  .footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-  text-align:start;
+  .footer-tablet-flex {
+    display: flex;
+    gap: 32px;
+  }
 
-}
+  .footer-sub-text {
 
-.wrapper-subscribe {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-}
+    text-align: start;
 
-.footer-email-input {
-  width: 264px;
-}
+  }
 
-.logo-footer {
-  text-align: start;
-}
+  .wrapper-subscribe {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
 
-.footer-media {
-  text-align: start;
-}
+  .footer-email-input {
+    width: 264px;
+  }
 
-/* Modal */
+  .logo-footer {
+    text-align: start;
+  }
+
+  .footer-media {
+    text-align: start;
+  }
+
+  /* Modal */
 
   .modal {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  
+
     width: 408px;
     min-height: 584px;
     border-radius: 4px;
     background: var(--modal-background, #FCFCFC);
     box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-  
+
     padding-top: 72px;
     padding-bottom: 24px;
     padding-left: 24px;
@@ -260,18 +266,19 @@
 
 }
 
-@media screen and (min-width: 769px){
+@media screen and (min-width: 769px) {
   .hero {
-    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/hero/_desc@1x.jpg');;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/hero/_desc@1x.jpg');
+    ;
   }
 
   @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-.hero {
-  background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/hero/_desc@2x.jpg');
-}
-}
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/hero/_desc@2x.jpg');
+    }
+  }
 
-  
+
 }
